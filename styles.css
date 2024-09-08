@@ -5,6 +5,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,18 +14,23 @@ body {
 }
 
 .main-container {
+    position: sticky;
+    height: 100vh;
     background-color: aqua;
     width: 100%;
     max-width: 800px;
-    height: 100vh;
-}
-
-.section-container {
+    top: center;
+    left: 0;
     background-color: rgba(143, 10, 232, 0.256);
     width: 100%;
-    background-image: url(images/honeyComb.svg);
-    background-attachment: fixed;
+    background: url(images/honeyComb.svg);
+    background-repeat: repeat;
+    overflow: scroll;
+    scrollbar-gutter:unset;
 }
+/* 
+.section-container {
+} */
 
 section {
     display: flex;
