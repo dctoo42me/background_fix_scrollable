@@ -7,18 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="nav">
+        <nav>
+            <div id="logo">
+                <img src="#" alt="logo">
+                <a href="index.html">logo</a>
+            </div>
+            <ul>
+                <a class="button" href="#first">
+                    <li>First</li>
+                </a>
+                <a class="button" href="#second">
+                    <li>Second</li>
+                </a>
+                <a class="button" href="#third">
+                    <li>Third</li>
+                </a>
+                <a class="button" href="#fourth">
+                    <li>Fourth</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
     <div class="main-container">
+        <div class="nav-offset"></div>
         <div class="section-container">
-            <section class="first row">
+            <section id="first" class="first row nav-m-offset">
                 <h1>This is the first Section</h1>
             </section>
-            <section class="second row">
+            <section id="second" class="second row nav-m-offset">
                 <h2>This is the second Section</h1>
             </section>
-            <section class="third row">
+            <section id="third" class="third row nav-m-offset">
                 <h2>This is the third Section</h1>
             </section>
-            <section class="fourth row">
+            <section id="fourth" class="fourth row nav-m-offset">
                 <h2>This is the fourth Section</h1>
             </section>
         </div>
