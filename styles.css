@@ -13,7 +13,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: black;
 }
 
@@ -49,13 +49,14 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     background-color: black;
     z-index: 2000;
 }
@@ -80,10 +81,10 @@ nav ul a {
 
 .main-container {
     position: absolute;
-    height: 100vh;
     background-color: aqua;
     width: 100%;
     max-width: 800px;
+    height: 100vh;
     top: 0;
     left: 50;
     background: url(images/honeyComb.svg);
@@ -105,10 +106,12 @@ section {
 section h1 {
     font-size: 4rem;
     font-weight: 600;
+    text-align: center;
 }
 
 section h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .first,.second,.third,.fourth {
@@ -171,6 +174,9 @@ section h2 {
         padding: 0 20px;
     }
     
+    .main-container {
+        width: 100vw;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
